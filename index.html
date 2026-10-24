@@ -16,18 +16,15 @@
 
 <style>
 :root {
-  --paper: #f5f2ea;
-  --paper-light: #fbf9f4;
-  --green: #183d32;
-  --green-dark: #102b24;
-  --green-soft: #dfe6dd;
-  --gold: #a88a55;
-  --ink: #252923;
-  --muted: #72766d;
-  --line: #dcd9cf;
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "DM Sans", sans-serif;
-  --display: "Manrope", sans-serif;
+  --forest: #173D30;
+--forest-light: #285744;
+--ivory: #F8F5EC;
+--paper: #FFFEFA;
+--sage: #DDE6DB;
+--gold: #C5A66A;
+--ink: #24352D;
+--muted: #626D64;
+--line: #E3E3D9;
 }
 
 * { box-sizing: border-box; }
@@ -172,9 +169,10 @@ button { font: inherit; }
 }
 
 .brand-name {
-  font: 800 19px/1.1 var(--display);
-  letter-spacing: 1.1px;
-  color: var(--green);
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .brand-sub {
@@ -235,11 +233,11 @@ button { font: inherit; }
 .hero-copy { padding: 24px 0 30px; }
 
 .hero h1 {
-  max-width: 660px;
+  max-width: 720px;
   margin: 26px 0;
   color: var(--green-dark);
-  font: 500 clamp(49px, 6.5vw, 82px)/1.03 var(--serif);
-  letter-spacing: -2.6px;
+  font: 600 clamp(49px, 6.5vw, 82px)/1.08 var(--serif);
+  letter-spacing: -1.5px;
 }
 
 .hero h1 em {
