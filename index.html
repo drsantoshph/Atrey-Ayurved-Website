@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f6ef">
+  <meta name="description" content="Atrey Ayurved, Panchakarma & Integrated Health Solutions in Bhandup West, Mumbai. Ayurvedic care, Panchakarma, general medicine and chronic disease management.">
+  <title>Atrey Ayurved | Panchakarma & Integrated Health Solutions</title>
+  <style>
+    :root {
+      --green: #345747;
+      --deep: #203e32;
+      --sage: #e7ede4;
+      --cream: #f7f6ef;
+      --text: #29372f;
+      --muted: #657168;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: inherit; }
+    header {
+      background: var(--cream);
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e4e5dc;
+    }
+    .brand { color: var(--green); font-size: 22px; font-weight: 700; letter-spacing: 2px; }
+    .brand small { display: block; font-size: 10px; letter-spacing: 1.3px; font-weight: 500; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    nav a { text-decoration: none; font-size: 14px; }
+    nav a:hover { color: var(--green); }
+    .hero {
+      padding: 90px 7%;
+      background: linear-gradient(120deg, #e8eee5, #f7f6ef 75%);
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 45px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(38px, 5vw, 62px); line-height: 1.12; color: var(--deep); margin: 15px 0 22px; }
+    h2 { font-size: clamp(28px, 3.5vw, 39px); color: var(--deep); line-height: 1.2; margin: 0 0 18px; }
+    h3 { color: var(--green); margin-top: 0; }
+    p { color: var(--muted); }
+    .hero p { max-width: 610px; font-size: 18px; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 13px 22px; border-radius: 5px;
+      background: var(--green); color: white; text-decoration: none; font-weight: 700;
+    }
+    .btn.secondary { background: transparent; color: var(--green); border: 1px solid var(--green); }
+    .hero-card {
+      background: var(--green); color: white; border-radius: 48% 48% 8px 8px;
+      padding: 55px 28px 38px; text-align: center; min-height: 300px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-card .leaf { font-size: 55px; }
+    .hero-card h2 { color: white; font-size: 26px; }
+    .hero-card p { color: #e1e9e2; }
+    section { padding: 75px 7%; }
+    .section-intro { max-width: 720px; margin-bottom: 32px; }
+    .center { text-align: center; margin-left: auto; margin-right: auto; }
+    .services { background: white; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card {
+      border: 1px solid #e5e8df; background: #fff; border-radius: 9px;
+      padding: 25px; height: 100%;
+    }
+    .card .symbol { font-size: 28px; margin-bottom: 12px; }
+    .card p { margin-bottom: 0; }
+    .soft { background: var(--sage); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; align-items: start; }
+    .list { padding-left: 20px; color: var(--muted); }
+    .list li { padding: 5px 0; }
+    .doctor { border-top: 3px solid var(--green); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
+    .contact-box { background: white; border-radius: 9px; padding: 28px; }
+    .contact-box p { margin: 10px 0; }
+    .contact-box a { color: var(--green); font-weight: 700; }
+    footer { background: var(--deep); color: white; padding: 30px 7%; }
+    footer p { color: #d8e1d9; font-size: 13px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      header { padding: 16px 5%; }
+      nav { gap: 12px; }
+      .hero { grid-template-columns: 1fr; padding: 58px 6%; }
+      .hero-card { min-height: 220px; }
+      section { padding: 55px 6%; }
+      .grid { grid-template-columns: 1fr; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#home" style="text-decoration:none">
+      <div class="brand">ATREY AYURVED
+        <small>PANCHAKARMA & INTEGRATED HEALTH SOLUTIONS</small>
+      </div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#panchakarma">Panchakarma</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">Ayurveda · Panchakarma · Modern Clinical Care</div>
+        <h1>Healthcare with understanding, care and empathy.</h1>
+        <p>Personalised Ayurvedic care and modern medical guidance, with an approach focused on the individual and their healthcare needs.</p>
+        <div class="buttons">
+          <a class="btn" href="https://wa.me/918779932849?text=Hello%20Atrey%20Ayurved%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          <a class="btn secondary" href="#services">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="leaf" aria-hidden="true">❧</div>
+        <h2>ATREY AYURVED</h2>
+        <p>Traditional knowledge. Individualised care. Informed decisions.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-grid">
+        <div>
+          <div class="eyebrow">Welcome to Atrey Ayurved</div>
+          <h2>Care centred around you.</h2>
+        </div>
+        <div>
+          <p>At Atrey Ayurved, we aim to provide thoughtful healthcare guidance by considering each person's needs, health history and treatment goals.</p>
+          <p>Our practice brings Ayurvedic treatment, Panchakarma and modern medical consultation together where appropriate, with an emphasis on clear communication and responsible care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-intro center">
+        <div class="eyebrow">Our Services</div>
+        <h2>Healthcare services for different needs.</h2>
+        <p>Consultation and care tailored to individual requirements following appropriate clinical assessment.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="symbol" aria-hidden="true">❧</div>
+          <h3>Ayurvedic Treatment</h3>
+          <p>Ayurvedic consultation and treatment planning based on individual assessment.</p>
+        </article>
+        <article class="card">
+          <div class="symbol" aria-hidden="true">✚</div>
+          <h3>General Medicine</h3>
+          <p>Medical consultation and guidance for common health concerns.</p>
+        </article>
+        <article class="card">
+          <div class="symbol" aria-hidden="true">◎</div>
+          <h3>Chronic Disease Management</h3>
+          <p>Ongoing care guidance and follow-up in coordination with appropriate medical treatment.</p>
+        </article>
+        <article class="card">
+          <div class="symbol" aria-hidden="true">◷</div>
+          <h3>Lifestyle Management</h3>
+          <p>Practical guidance on daily routines and lifestyle habits to support health.</p>
+        </article>
+        <article class="card">
+          <div class="symbol" aria-hidden="true">❀</div>
+          <h3>Suprajanan & Garbhasanskar</h3>
+          <p>Guidance relating to preconception care and pregnancy wellbeing.</p>
+        </article>
+        <article class="card">
+          <div class="symbol" aria-hidden="true">✧</div>
+          <h3>Skin, Hair & Cosmetology</h3>
+          <p>Selected aesthetic services, including Hydrafacial, chemical peels and PRP for skin and hair, subject to assessment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="soft" id="panchakarma">
+      <div class="section-intro">
+        <div class="eyebrow">Ayurvedic Procedures</div>
+        <h2>Panchakarma & related procedures</h2>
+        <p>Procedures are considered after individual assessment and are provided when clinically appropriate.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Snehan & Swedan</h3><p>Ayurvedic oleation and fomentation procedures.</p></article>
+        <article class="card"><h3>Basti</h3><p>An Ayurvedic therapeutic enema procedure.</p></article>
+        <article class="card"><h3>Shirodhara</h3><p>A traditional procedure involving a steady stream of liquid over the forehead.</p></article>
+        <article class="card"><h3>Takradhara</h3><p>A traditional dhara procedure using medicated buttermilk preparations.</p></article>
+        <article class="card"><h3>Nasya</h3><p>An Ayurvedic procedure involving administration through the nasal route.</p></article>
+        <article class="card"><h3>Netratarpan</h3><p>A traditional Ayurvedic eye-care procedure, following suitability assessment.</p></article>
+        <article class="card"><h3>Vaman</h3><p>A specialised therapeutic procedure performed only after appropriate assessment.</p></article>
+        <article class="card"><h3>Virechan</h3><p>A specialised Ayurvedic therapeutic purgation procedure.</p></article>
+        <article class="card"><h3>Suvarnaprashan</h3><p>Ask our clinic about suitability, procedure details and age-specific guidance.</p></article>
+      </div>
+    </section>
+
+    <section id="doctors">
+      <div class="section-intro center">
+        <div class="eyebrow">Your Care Team</div>
+        <h2>Meet our doctors</h2>
+      </div>
+      <div class="grid">
+        <article class="card doctor">
+          <h3>Dr Vidyashree Hulawale</h3>
+          <p>Ayurvedic consultation and care.</p>
+        </article>
+        <article class="card doctor">
+          <h3>Dr Santosh Hulawale</h3>
+          <p>Consultation and integrated healthcare guidance.</p>
+        </article>
+        <article class="card doctor">
+          <h3>Personalised Approach</h3>
+          <p>We discuss your concerns and help you understand appropriate care options.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="contact">
+      <div class="section-intro">
+        <div class="eyebrow">Visit Our Clinic</div>
+        <h2>We are here to help you take the next step.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>Clinic Address</h3>
+          <p>106, Kshitij Eminence,<br>Opp. Dina Bama Patil Library,<br>Jangal Mangal Road, Bhandup West,<br>Mumbai, Maharashtra.</p>
+          <p><strong>Consultation hours</strong><br>Monday–Saturday: 10:00 am – 9:00 pm</p>
+          <p><strong>Phone:</strong> <a href="tel:+918779932849">8779932849</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>Contact & Directions</h3>
+          <p>For appointments and enquiries, please contact the clinic.</p>
+          <p><a href="https://wa.me/918779932849?text=Hello%20Atrey%20Ayurved%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Message us on WhatsApp →</a></p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=106+Kshitij+Eminence+Jangal+Mangal+Road+Bhandup+West+Mumbai" target="_blank" rel="noopener">Get directions on Google Maps →</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <div><strong>ATREY AYURVED</strong><br><span>Panchakarma & Integrated Health Solutions</span></div>
+      <p>Healthcare decisions should be made with qualified healthcare professionals. Website information is for general guidance and is not a substitute for individual consultation.</p>
+    </div>
+    <p>© <span id="year"></span> Atrey Ayurved. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
