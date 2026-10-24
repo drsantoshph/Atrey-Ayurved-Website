@@ -3,169 +3,63 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#203b30">
-<meta name="description" content="Atrey Clinic in Bhandup West, Mumbai. Ayurveda, Panchakarma, general medicine, chronic disease management, lifestyle management and skin and hair services.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Atrey Clinic | Ayurveda, Panchakarma & Integrated Healthcare</title>
+
+<meta name="description" content="Atrey Clinic in Bhandup West, Mumbai. Personalised Ayurvedic care, Panchakarma, general medicine, chronic disease management and skin and hair treatments.">
+<meta name="theme-color" content="#f5f2ea">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --green: #203b30;
-  --green-light: #345546;
-  --ivory: #f8f6ef;
-  --paper: #fffefa;
-  --sage: #e8ece3;
-  --gold: #b69b65;
-  --text: #27342d;
-  --muted: #70786f;
-  --line: #e4e5dc;
+  --paper: #f5f2ea;
+  --paper-light: #fbf9f4;
+  --green: #183d32;
+  --green-dark: #102b24;
+  --green-soft: #dfe6dd;
+  --gold: #a88a55;
+  --ink: #252923;
+  --muted: #72766d;
+  --line: #dcd9cf;
   --serif: "Playfair Display", Georgia, serif;
-  --sans: "DM Sans", Arial, sans-serif;
+  --sans: "DM Sans", sans-serif;
+  --display: "Manrope", sans-serif;
 }
 
 * { box-sizing: border-box; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 90px;
 }
 
 body {
   margin: 0;
   background: var(--paper);
-  color: var(--text);
+  color: var(--ink);
   font-family: var(--sans);
-  font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-img { display: block; max-width: 100%; }
-a { color: inherit; }
-.container { width: min(1240px, 88%); margin: auto; }
+a { color: inherit; text-decoration: none; }
 
-.topbar {
-  padding: 8px 0;
-  background: var(--green);
-  color: #f5f1e5;
-  font-size: 11px;
-  letter-spacing: .4px;
-}
+button, a { -webkit-tap-highlight-color: transparent; }
 
-.topbar-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
+button { font: inherit; }
 
-.topbar a { text-decoration: none; }
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: rgba(255,254,250,.97);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
-}
-
-.nav {
-  min-height: 84px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-}
-
-.brand {
-  display: inline-flex;
-  flex-direction: column;
-  color: var(--green);
-  text-decoration: none;
-  line-height: 1.25;
-}
-
-.brand-name {
-  font: 400 29px var(--serif);
-  letter-spacing: 1.5px;
-}
-
-.brand-sub {
-  margin-top: 5px;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 21px;
-}
-
-.nav-links a {
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.nav-links a:hover { color: #9a7e47; }
-
-.nav-links .nav-cta {
-  padding: 11px 16px;
+::selection {
   background: var(--green);
   color: white;
 }
 
-.menu-toggle {
-  display: none;
-  padding: 9px 12px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--green);
-  font: inherit;
-}
-
-.hero {
-  position: relative;
-  min-height: 620px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: var(--green);
-  color: white;
-}
-
-.hero-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(20,42,32,.94),
-    rgba(24,46,35,.75) 52%,
-    rgba(24,46,35,.15)
-  );
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  width: min(1240px, 88%);
+.wrap {
+  width: min(1160px, calc(100% - 48px));
   margin: auto;
-  padding: 90px 0;
 }
 
 .eyebrow {
@@ -175,633 +69,1015 @@ a { color: inherit; }
   color: var(--gold);
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
 }
 
 .eyebrow::before {
   content: "";
-  width: 28px;
+  width: 26px;
   height: 1px;
   background: currentColor;
-  flex-shrink: 0;
 }
 
-.hero h1 {
-  max-width: 730px;
-  margin: 25px 0;
-  font: 400 clamp(44px,6.3vw,78px)/1.12 var(--serif);
-  letter-spacing: -1px;
+.section {
+  padding: 110px 0;
 }
 
-.hero h1 em {
-  color: #e1cc9b;
-  font-weight: 400;
+.section-heading {
+  max-width: 720px;
+  margin: 18px 0 24px;
+  font: 500 clamp(38px, 5vw, 62px)/1.12 var(--serif);
+  letter-spacing: -1.5px;
 }
 
-.hero-description {
-  max-width: 530px;
-  color: #e4e8df;
+.section-heading em {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.section-intro {
+  max-width: 550px;
+  color: var(--muted);
   font-size: 15px;
-  line-height: 2;
 }
 
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-  margin-top: 30px;
-}
-
-.button {
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 12px 21px;
+  gap: 14px;
+  min-height: 51px;
+  padding: 0 23px;
   border: 1px solid var(--green);
   background: var(--green);
   color: white;
   font-size: 12px;
   font-weight: 700;
-  text-decoration: none;
-  transition: .25s;
+  letter-spacing: .4px;
+  transition: background .25s, color .25s, transform .25s;
 }
 
-.button:hover { transform: translateY(-2px); }
+.btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+}
 
-.button-gold {
-  border-color: #d2bb88;
-  background: #d2bb88;
+.btn-outline {
   color: var(--green);
+  background: transparent;
 }
 
-.button-outline {
-  border-color: rgba(255,255,255,.65);
-  background: transparent;
+.btn-outline:hover {
+  background: var(--green);
   color: white;
 }
 
-.hero-note {
-  margin-top: 30px;
-  color: #d5ded5;
-  font-size: 11px;
+.arrow { font-size: 18px; line-height: 1; }
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(245,242,234,.94);
+  border-bottom: 1px solid rgba(220,217,207,.8);
+  backdrop-filter: blur(14px);
 }
 
-/* SCROLL STORY */
-
-.story-section {
-  padding: 80px 0 95px;
-  background: var(--ivory);
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
 }
 
-.story-heading {
-  max-width: 780px;
-  margin: 0 auto 50px;
-  padding: 0 6%;
-  text-align: center;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.story-heading .eyebrow { justify-content: center; }
-
-.story-heading h2 {
-  margin: 18px 0;
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border: 1px solid var(--gold);
   color: var(--green);
-  font: 400 clamp(36px,5vw,59px)/1.2 var(--serif);
+  font: 500 27px var(--serif);
+  transform: rotate(-3deg);
 }
 
-.story-heading p {
+.brand-name {
+  font: 800 19px/1.1 var(--display);
+  letter-spacing: 1.1px;
+  color: var(--green);
+}
+
+.brand-sub {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 8px;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4d5149;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  padding: 12px 16px;
+  background: var(--green);
+  color: white !important;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--green);
+  width: 44px;
+  height: 44px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 62px 0 86px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.04fr .96fr;
+  align-items: center;
+  gap: 52px;
+}
+
+.hero-copy { padding: 24px 0 30px; }
+
+.hero h1 {
+  max-width: 660px;
+  margin: 26px 0;
+  color: var(--green-dark);
+  font: 500 clamp(49px, 6.5vw, 82px)/1.03 var(--serif);
+  letter-spacing: -2.6px;
+}
+
+.hero h1 em {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 440px;
+  margin-bottom: 30px;
+  color: #656960;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-note {
+  margin-top: 39px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .3px;
+}
+
+/* Original abstract architectural artwork */
+
+.artwork {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: #d8d4c8;
+  isolation: isolate;
+}
+
+.artwork::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(122deg, transparent 0 40%, rgba(255,255,255,.35) 40.2% 40.6%, transparent 40.8%),
+    linear-gradient(180deg, #e8e2d5, #b9b7a9);
+}
+
+.art-sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 54px;
+  right: 42px;
+  border-radius: 50%;
+  background: #eae2ce;
+  opacity: .85;
+}
+
+.art-wall {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 72%;
+  height: 87%;
+  background: linear-gradient(120deg, #8c988a, #294b3d 75%);
+  clip-path: polygon(31% 0,100% 0,100% 100%,0 100%,0 34%);
+}
+
+.art-wall::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22%;
+  width: 35%;
+  height: 72%;
+  background: linear-gradient(110deg, #e8e1d2, #a5aa9b);
+  clip-path: polygon(0 0,100% 0,100% 100%,0 72%);
+}
+
+.art-pillar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 17%;
+  width: 14%;
+  background: linear-gradient(90deg, #b0a996, #e8e1d2 45%, #b1ac9d);
+  box-shadow: 18px 0 35px rgba(26,44,34,.12);
+}
+
+.art-shadow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 78%;
+  height: 54%;
+  background: rgba(13,38,30,.55);
+  clip-path: polygon(0 0,100% 35%,100% 100%,0 100%);
+}
+
+.art-frame {
+  position: absolute;
+  top: 14%;
+  right: 13%;
+  width: 38%;
+  height: 54%;
+  border: 1px solid rgba(245,242,234,.8);
+}
+
+.art-frame::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(245,242,234,.35);
+}
+
+.art-human {
+  position: absolute;
+  z-index: 2;
+  left: 42%;
+  bottom: 0;
+  width: 31%;
+  height: 58%;
+}
+
+.art-human .head {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  width: 39%;
+  height: 22%;
+  border-radius: 48% 48% 42% 42%;
+  background: #9d8068;
+  transform: rotate(-5deg);
+}
+
+.art-human .body {
+  position: absolute;
+  top: 18%;
+  left: 8%;
+  width: 84%;
+  height: 82%;
+  background: linear-gradient(110deg, #e4d9c6, #b6b2a2);
+  clip-path: polygon(28% 0,72% 0,100% 30%,78% 48%,72% 100%,28% 100%,22% 48%,0 30%);
+}
+
+.art-caption {
+  position: absolute;
+  z-index: 4;
+  left: 24px;
+  bottom: 22px;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.art-index {
+  position: absolute;
+  z-index: 4;
+  top: 24px;
+  left: 24px;
+  color: var(--green-dark);
+  font: italic 15px var(--serif);
+}
+
+/* Intro strip */
+
+.intro-strip {
+  background: var(--green);
+  color: var(--paper);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.intro-item {
+  padding: 28px 26px;
+  border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.intro-item:first-child { padding-left: 0; }
+.intro-item:last-child { border-right: 0; }
+
+.intro-number {
+  display: block;
+  margin-bottom: 5px;
+  color: #c9b68f;
+  font: italic 25px var(--serif);
+}
+
+.intro-item strong {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .6px;
+}
+
+.intro-item p {
+  margin: 7px 0 0;
+  color: #c8d0c8;
+  font-size: 12px;
+}
+
+/* Approach */
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.approach-visual {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  background: #d9d5c9;
+}
+
+.approach-visual::before {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  width: 72%;
+  height: 92%;
+  border: 1px solid rgba(24,61,50,.35);
+}
+
+.approach-visual::after {
+  content: "";
+  position: absolute;
+  right: -6%;
+  top: 17%;
+  width: 80%;
+  height: 82%;
+  background: linear-gradient(140deg, #a7afa0, #385747);
+  clip-path: polygon(34% 0,100% 0,100% 100%,0 100%,0 36%);
+}
+
+.approach-circle {
+  position: absolute;
+  z-index: 2;
+  top: 18%;
+  left: 18%;
+  width: 45%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 50%;
+}
+
+.approach-circle::before,
+.approach-circle::after {
+  content: "";
+  position: absolute;
+  background: rgba(245,242,234,.6);
+}
+
+.approach-circle::before {
+  width: 1px;
+  height: 140%;
+  left: 50%;
+  top: -20%;
+}
+
+.approach-circle::after {
+  height: 1px;
+  width: 140%;
+  top: 50%;
+  left: -20%;
+}
+
+.approach-symbol {
+  position: absolute;
+  z-index: 3;
+  left: 27%;
+  top: 30%;
+  color: var(--paper);
+  font: italic 66px var(--serif);
+}
+
+.approach-copy .section-heading { margin-bottom: 25px; }
+
+.approach-copy > p {
   color: var(--muted);
   font-size: 14px;
 }
 
-.story-layout {
+.principles {
+  margin-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.principle {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  gap: 7%;
-  align-items: start;
-  width: min(1240px, 88%);
-  margin: auto;
-}
-
-.story-visual {
-  position: sticky;
-  top: 110px;
-  height: min(76vh,720px);
-  min-height: 450px;
-  overflow: hidden;
-  background: var(--green);
-}
-
-.story-photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transform: scale(1.04);
-  transition: opacity .8s ease, transform 1.4s ease;
-}
-
-.story-photo.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.story-visual::after {
-  content: "";
-  position: absolute;
-  inset: 35% 0 0;
-  background: linear-gradient(transparent,rgba(21,39,29,.78));
-  pointer-events: none;
-}
-
-.story-image-caption {
-  position: absolute;
-  z-index: 2;
-  right: 25px;
-  bottom: 28px;
-  left: 28px;
-  color: white;
-  font: 400 clamp(23px,2.5vw,32px)/1.3 var(--serif);
-}
-
-.story-chapter {
-  min-height: 74vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px 0;
-  border-bottom: 1px solid #e0e1d8;
-  opacity: .48;
-  transition: opacity .5s ease;
-}
-
-.story-chapter.active { opacity: 1; }
-
-.story-index {
-  margin-bottom: 20px;
-  color: #a88d57;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-}
-
-.story-chapter h3 {
-  max-width: 480px;
-  margin: 0 0 18px;
-  color: var(--green);
-  font: 400 clamp(34px,3.6vw,48px)/1.2 var(--serif);
-}
-
-.story-chapter p {
-  max-width: 440px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 2;
-}
-
-.story-chapter a {
-  align-self: flex-start;
-  margin-top: 12px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--gold);
-  color: var(--green);
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-/* INTRO STRIP AND OTHER SECTIONS */
-
-.intro-strip {
-  background: var(--paper);
+  grid-template-columns: 43px 1fr;
+  gap: 15px;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.intro-strip-inner {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+.principle-num {
+  color: var(--gold);
+  font: italic 21px var(--serif);
 }
 
-.intro-item {
-  padding: 25px 15px;
-  text-align: center;
-  border-right: 1px solid var(--line);
-}
-
-.intro-item:last-child { border-right: 0; }
-
-.intro-item strong {
+.principle strong {
   display: block;
   color: var(--green);
-  font: 500 18px var(--serif);
+  font-size: 14px;
 }
 
-.intro-item span {
+.principle p {
+  margin: 4px 0 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
-.section { padding: 95px 0; }
-.section-ivory { background: var(--ivory); }
-.section-sage { background: var(--sage); }
+/* Services */
 
-.section-heading {
-  max-width: 720px;
-  margin-bottom: 42px;
+.services {
+  background: var(--paper-light);
 }
 
-.section-heading.center {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
+.services-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 48px;
 }
 
-.section-heading.center .eyebrow { justify-content: center; }
+.services-top .section-heading { margin-bottom: 0; }
 
-.section-heading h2,
-.split-copy h2,
-.panchakarma-layout h2,
-.visit h2 {
-  margin: 17px 0;
-  color: var(--green);
-  font: 400 clamp(34px,4.2vw,51px)/1.2 var(--serif);
-}
-
-.section-heading p,
-.body-copy {
+.services-top p {
+  max-width: 330px;
+  margin-bottom: 6px;
   color: var(--muted);
   font-size: 13px;
-  line-height: 2;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 65px;
-}
-
-.editorial-image {
-  position: relative;
-  min-height: 420px;
-  overflow: hidden;
-  background: var(--sage);
-}
-
-.editorial-image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.image-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 22px;
-  background: linear-gradient(transparent,rgba(23,43,32,.78));
-  color: white;
-  font: 400 22px var(--serif);
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .service-card {
-  min-height: 225px;
-  padding: 27px;
-  background: white;
-  border: 1px solid var(--line);
-  transition: .25s;
+  position: relative;
+  min-height: 250px;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: background .25s;
 }
 
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(32,59,48,.07);
+.service-card:hover { background: #eeece3; }
+
+.service-index {
+  color: var(--gold);
+  font: italic 20px var(--serif);
 }
 
-.service-number {
-  display: block;
-  margin-bottom: 20px;
-  color: #a88d57;
-  font: 400 25px var(--serif);
-}
-
-.service-card h3,
-.beauty-copy h3 {
-  margin: 0 0 10px;
+.service-card h3 {
+  margin: 23px 0 12px;
   color: var(--green);
-  font: 500 23px/1.35 var(--serif);
+  font: 500 25px/1.2 var(--serif);
 }
 
-.service-card p,
-.beauty-copy p {
+.service-card p {
   margin: 0;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.9;
 }
 
-.service-card a {
-  display: inline-block;
-  margin-top: 15px;
-  color: var(--green);
-  font-size: 11px;
-  font-weight: 700;
-  text-decoration: none;
+.service-arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 24px;
+  color: var(--gold);
+  font-size: 20px;
 }
 
-.panchakarma-layout {
+/* Panchakarma */
+
+.panchakarma {
+  position: relative;
+  overflow: hidden;
+  background: var(--green-dark);
+  color: var(--paper);
+}
+
+.panchakarma::after {
+  content: "P";
+  position: absolute;
+  right: 1%;
+  top: -155px;
+  color: rgba(255,255,255,.035);
+  font: 500 550px var(--serif);
+  pointer-events: none;
+}
+
+.panchakarma-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: .85fr 1.15fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 100px;
+}
+
+.panchakarma .section-heading { color: var(--paper); }
+.panchakarma .section-heading em { color: #c7b48d; }
+
+.panchakarma .section-intro { color: #c5cdc5; }
+
+.panchakarma-note {
+  margin-top: 30px;
+  color: #c7b48d;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .procedure-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 25px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  align-content: center;
 }
 
-.procedure-list li {
-  padding: 15px 0;
-  border-bottom: 1px solid #d4dccf;
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 600;
+.procedure {
+  padding: 22px 12px;
+  border-top: 1px solid rgba(255,255,255,.2);
 }
 
-.procedure-list li::before {
-  content: "✳";
-  margin-right: 10px;
-  color: #a68b53;
+.procedure:nth-last-child(-n+2) {
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.note {
-  padding: 17px 20px;
-  background: rgba(255,255,255,.65);
-  border-left: 2px solid var(--gold);
-  color: var(--muted);
+.procedure strong {
+  display: block;
+  color: #e8e4d9;
+  font: 500 22px var(--serif);
+}
+
+.procedure span {
+  display: block;
+  margin-top: 4px;
+  color: #b9c4b9;
   font-size: 11px;
-  line-height: 1.9;
 }
 
-.cosmetic-intro {
-  display: grid;
-  grid-template-columns: 1fr .7fr;
-  align-items: end;
-  gap: 35px;
-}
+/* Skin and hair */
 
-.beauty-grid {
-  display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 20px;
-}
-
-.beauty-card {
-  background: white;
-  border: 1px solid var(--line);
-}
-
-.beauty-image {
-  height: 230px;
-  overflow: hidden;
-  background: var(--sage);
-}
-
-.beauty-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .4s;
-}
-
-.beauty-card:hover img { transform: scale(1.04); }
-.beauty-copy { padding: 23px; }
-
-.beauty-copy .eyebrow {
-  font-size: 9px;
-  letter-spacing: 1.4px;
-}
-
-.beauty-copy h3 { margin-top: 12px; }
-
-.doctors-grid,
-.contact-grid {
+.skin-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  gap: 70px;
+  align-items: center;
 }
 
-.doctor-card,
-.contact-card {
-  padding: 32px;
-  background: white;
-  border: 1px solid var(--line);
+.skin-art {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  background: #e4ded1;
 }
 
-.doctor-initial {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  background: var(--sage);
+.skin-art::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 14%;
+  width: 65%;
+  height: 82%;
+  border: 1px solid rgba(24,61,50,.5);
+  transform: rotate(-5deg);
+}
+
+.skin-art::after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 24%;
+  width: 53%;
+  height: 72%;
+  background: linear-gradient(145deg, #c5b39a, #9a8069);
+  clip-path: polygon(32% 0,68% 0,82% 12%,78% 27%,100% 43%,82% 60%,72% 100%,25% 100%,18% 65%,0 43%,20% 27%,18% 12%);
+}
+
+.skin-art-label {
+  position: absolute;
+  z-index: 2;
+  left: 22px;
+  bottom: 20px;
   color: var(--green);
-  font: 400 23px var(--serif);
-}
-
-.doctor-card h3,
-.contact-card h3 {
-  margin: 0 0 12px;
-  color: var(--green);
-  font: 500 25px var(--serif);
-}
-
-.doctor-card p,
-.contact-card p {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 2;
-}
-
-.contact-card a {
-  color: var(--green);
+  font-size: 10px;
   font-weight: 700;
-  text-decoration-color: var(--gold);
-  text-underline-offset: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.hours {
-  margin-top: 20px;
-  padding-top: 18px;
+.treatment-list {
+  margin-top: 28px;
   border-top: 1px solid var(--line);
 }
 
-.hours strong { color: var(--green); }
+.treatment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+}
 
-.visit {
-  padding: 75px 0;
+.treatment span:last-child {
+  color: var(--gold);
+  font-size: 19px;
+}
+
+/* Doctors */
+
+.doctors {
+  background: #e9e7de;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+.doctor-card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 23px;
+  padding: 32px;
+  background: var(--paper-light);
+  border: 1px solid #dedbd1;
+}
+
+.doctor-monogram {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 115px;
   background: var(--green);
+  color: #d5c39e;
+  font: italic 38px var(--serif);
+}
+
+.doctor-card h3 {
+  margin: 0 0 7px;
+  color: var(--green);
+  font: 500 24px var(--serif);
+}
+
+.doctor-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.doctor-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+/* Contact */
+
+.contact {
+  padding: 100px 0;
+  background: var(--paper-light);
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr .9fr;
+  gap: 70px;
+  padding: 56px;
+  background: var(--green);
+  color: var(--paper);
+}
+
+.contact .section-heading {
+  color: var(--paper);
+  font-size: clamp(38px, 4.5vw, 58px);
+}
+
+.contact .section-heading em { color: #d0bc94; }
+
+.contact-copy > p {
+  max-width: 440px;
+  color: #cbd2ca;
+  font-size: 14px;
+}
+
+.contact-details {
+  display: grid;
+  align-content: center;
+  gap: 23px;
+}
+
+.contact-detail {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.contact-detail:last-child { border-bottom: 0; }
+
+.contact-detail span {
+  display: block;
+  margin-bottom: 6px;
+  color: #c7b48d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.contact-detail p {
+  margin: 0;
+  color: #f3f0e7;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.contact .btn {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--green);
+}
+
+.contact .btn:hover {
+  background: #e2d9c5;
+  border-color: #e2d9c5;
+}
+
+.contact .btn-outline {
+  background: transparent;
+  border-color: rgba(255,255,255,.5);
   color: white;
 }
 
-.visit-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 30px;
+.contact .btn-outline:hover {
+  background: rgba(255,255,255,.1);
 }
 
-.visit h2 { color: white; }
-.visit p { max-width: 600px; color: #d7e0d7; font-size: 13px; }
+/* Footer */
 
 .footer {
-  padding: 42px 0 22px;
-  background: #172c23;
-  color: white;
+  padding: 30px 0;
+  background: var(--paper);
 }
 
-.footer-main {
+.footer-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 35px;
-  padding-bottom: 30px;
+  gap: 24px;
 }
 
-.footer .brand { color: white; }
-.footer .brand-sub { color: #d1d8cd; }
-
-.footer p {
-  max-width: 450px;
-  color: #c4d0c5;
-  font-size: 11px;
+.footer-copy {
+  color: var(--muted);
+  font-size: 10px;
 }
 
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  align-content: start;
-}
-
-.footer-links a {
-  color: #e1e7dd;
+  gap: 22px;
   font-size: 11px;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,.15);
-  color: #aebdb0;
-  font-size: 10px;
+  font-weight: 600;
+  color: var(--green);
 }
 
 .whatsapp-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 30;
-  padding: 12px 16px;
-  background: #254d39;
+  z-index: 15;
+  right: 22px;
+  bottom: 22px;
+  display: grid;
+  place-items: center;
+  width: 57px;
+  height: 57px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 50%;
+  background: #245a42;
   color: white;
-  box-shadow: 0 8px 28px rgba(0,0,0,.17);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  text-decoration: none;
+  box-shadow: 0 7px 24px rgba(16,43,36,.2);
+  transition: transform .2s;
 }
 
-@media (max-width: 1000px) {
-  .nav-links { gap: 12px; }
+.whatsapp-float:hover { transform: translateY(-3px); }
+
+/* Entrance motion */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .nav-links { gap: 15px; }
   .nav-links a { font-size: 11px; }
-  .brand-name { font-size: 25px; }
-  .split, .panchakarma-layout { gap: 35px; }
+  .hero-grid { gap: 28px; }
+  .artwork { min-height: 470px; }
+  .approach-grid { gap: 42px; }
+  .panchakarma-grid { gap: 42px; }
+  .contact-panel { gap: 35px; padding: 38px; }
+  .service-card { padding: 24px; }
 }
 
-@media (max-width: 800px) {
-  .container { width: 90%; }
-  .topbar-inner { justify-content: center; text-align: center; }
-  .topbar-inner span:last-child { display: none; }
-  .nav { min-height: 76px; flex-wrap: wrap; }
+@media (max-width: 720px) {
+  .wrap { width: min(100% - 34px, 560px); }
+  .section { padding: 76px 0; }
+  .nav { min-height: 72px; }
+  .brand-name { font-size: 17px; }
+  .brand-sub { font-size: 7px; letter-spacing: 1px; }
   .menu-toggle { display: block; }
   .nav-links {
     display: none;
-    width: 100%;
-    padding: 8px 0 18px;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 18px 24px 25px;
+    background: var(--paper-light);
+    border-bottom: 1px solid var(--line);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
   }
   .nav-links.open { display: flex; }
-  .nav-links a { padding: 10px 0; font-size: 13px; }
-  .nav-links .nav-cta { padding: 12px; text-align: center; }
-  .hero { min-height: 560px; }
-  .hero-content { width: 90%; padding: 70px 0; }
-  .hero::after { background: linear-gradient(90deg,rgba(20,42,32,.92),rgba(24,46,35,.56)); }
-  .section { padding: 70px 0; }
-  .split, .panchakarma-layout { grid-template-columns: 1fr; gap: 30px; }
-  .editorial-image { min-height: 330px; }
-  .service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .cosmetic-intro { grid-template-columns: 1fr; gap: 0; }
-  .beauty-grid { grid-template-columns: 1fr 1fr; }
-  .visit-inner { grid-template-columns: 1fr; }
-  .story-section { padding: 55px 0 65px; }
-  .story-heading { margin-bottom: 30px; }
-  .story-layout { width: 100%; grid-template-columns: 1fr; gap: 0; }
-  .story-visual {
-    top: 0;
-    z-index: 3;
-    height: 40vh;
-    min-height: 260px;
-    max-height: 390px;
+  .nav-links a {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
   }
-  .story-image-caption { left: 22px; bottom: 18px; font-size: 24px; }
-  .story-chapters { padding: 0 7%; }
-  .story-chapter { min-height: 62vh; padding: 40px 0; opacity: .7; }
-  .story-chapter.active { opacity: 1; }
-}
+  .nav-links .nav-cta {
+    margin-top: 12px;
+    padding: 13px 16px;
+    text-align: center;
+    border: 0;
+  }
 
-@media (max-width: 520px) {
-  .brand-name { font-size: 24px; }
-  .brand-sub { font-size: 7px; letter-spacing: .6px; }
-  .hero { min-height: 580px; }
-  .hero h1 { font-size: 43px; }
+  .hero { padding: 40px 0 55px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 25px; }
+  .hero-copy { padding: 10px 0; }
+  .hero h1 { font-size: clamp(49px, 12vw, 68px); letter-spacing: -1.8px; }
   .hero-description { font-size: 14px; }
-  .actions { flex-direction: column; }
-  .actions .button { width: 100%; }
-  .intro-strip-inner { grid-template-columns: 1fr; }
-  .intro-item { padding: 16px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .section { padding: 58px 0; }
-  .service-grid, .beauty-grid, .doctors-grid, .contact-grid { grid-template-columns: 1fr; }
-  .procedure-list { grid-template-columns: 1fr; }
-  .beauty-image { height: 240px; }
-  .doctor-card, .contact-card { padding: 25px; }
-  .footer-main, .footer-bottom { flex-direction: column; }
-  .whatsapp-float { right: 12px; bottom: 12px; }
+  .artwork { min-height: 410px; }
+  .art-sun { width: 145px; height: 145px; }
+  .hero-note { margin-top: 25px; }
+
+  .intro-grid { grid-template-columns: 1fr; }
+  .intro-item, .intro-item:first-child {
+    padding: 19px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+  }
+  .intro-item:last-child { border-bottom: 0; }
+
+  .approach-grid, .skin-grid, .panchakarma-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .approach-visual { min-height: 370px; }
+  .section-heading { font-size: 44px; letter-spacing: -1px; }
+  .services-top { display: block; }
+  .services-top p { margin-top: 22px; }
+  .service-grid { grid-template-columns: 1fr 1fr; }
+  .service-card { min-height: 230px; padding: 20px 17px; }
+  .service-card h3 { font-size: 22px; }
+  .service-card p { font-size: 11px; }
+  .panchakarma-grid { gap: 30px; }
+  .procedure { padding: 18px 8px; }
+  .procedure strong { font-size: 20px; }
+  .skin-art { min-height: 350px; order: 2; }
+  .skin-copy { order: 1; }
+  .doctor-grid { grid-template-columns: 1fr; }
+  .doctor-card { padding: 23px; grid-template-columns: 78px 1fr; gap: 17px; }
+  .doctor-monogram { width: 78px; height: 95px; font-size: 31px; }
+  .doctor-card h3 { font-size: 21px; }
+  .contact { padding: 65px 0; }
+  .contact-panel { grid-template-columns: 1fr; gap: 36px; padding: 29px 23px; }
+  .contact .section-heading { font-size: 43px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 13px; }
+  .whatsapp-float { width: 51px; height: 51px; right: 15px; bottom: 15px; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { transition: none !important; }
+@media (max-width: 390px) {
+  .brand-mark { width: 37px; height: 37px; }
+  .brand-name { font-size: 15px; }
+  .brand-sub { font-size: 6px; }
+  .service-grid { grid-template-columns: 1fr; }
+  .service-card { min-height: 190px; }
+  .hero-actions .btn { width: 100%; }
+  .procedure strong { font-size: 18px; }
 }
 </style>
 
@@ -810,12 +1086,14 @@ a { color: inherit; }
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "Atrey Clinic",
-  "telephone": "+918779932849",
+  "description": "Ayurveda, Panchakarma and Integrated Healthcare",
+  "telephone": "+91-8779932849",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "106, Kshitij Eminence, Opp. Dina Bama Patil Library, Jangal Mangal Road",
     "addressLocality": "Bhandup West, Mumbai",
     "addressRegion": "Maharashtra",
+    "postalCode": "400078",
     "addressCountry": "IN"
   },
   "openingHours": "Mo-Sa 10:00-21:00"
@@ -824,270 +1102,445 @@ a { color: inherit; }
 </head>
 
 <body>
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>Bhandup West, Mumbai · Ayurveda & Integrated Healthcare</span>
-    <span>Mon–Sat, 10 AM–9 PM | <a href="tel:+918779932849">87799 32849</a></span>
-  </div>
-</div>
 
 <header class="header">
-  <div class="container nav">
+  <div class="wrap nav">
     <a class="brand" href="#home" aria-label="Atrey Clinic home">
-      <span class="brand-name">Atrey Clinic</span>
-      <span class="brand-sub">AYURVEDA · PANCHAKARMA · INTEGRATED HEALTHCARE</span>
+      <span class="brand-mark">A</span>
+      <span>
+        <span class="brand-name">ATREY CLINIC</span>
+        <span class="brand-sub">Ayurveda · Panchakarma · Integrated Healthcare</span>
+      </span>
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menu ☰</button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#about">Our Approach</a>
+      <a href="#approach">Our Approach</a>
       <a href="#services">Services</a>
       <a href="#panchakarma">Panchakarma</a>
-      <a href="#cosmetology">Skin & Hair</a>
-      <a href="#doctors">Doctors</a>
-      <a class="nav-cta" href="#contact">Contact Us ↗</a>
+      <a href="#doctors">Our Doctors</a>
+      <a href="#contact" class="nav-cta">Book a Consultation ↗</a>
     </nav>
   </div>
 </header>
 
 <main>
+
 <section class="hero" id="home">
-  <img class="hero-image" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85" alt="Calm wellness setting">
-  <div class="hero-content">
-    <div class="eyebrow">A considered approach to healthcare</div>
-    <h1>Care that begins with <em>understanding.</em></h1>
-    <p class="hero-description">Personalised Ayurvedic care, Panchakarma and modern medical guidance, with attention to the individual and their healthcare needs.</p>
-    <div class="actions">
-      <a class="button button-gold" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer">Enquire About an Appointment ↗</a>
-      <a class="button button-outline" href="#services">Explore Our Services</a>
-    </div>
-    <div class="hero-note">Traditional knowledge. Individualised care. Informed decisions.</div>
-  </div>
-</section>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow">A considered approach to healthcare</div>
 
-<section class="story-section" id="our-story">
-  <div class="story-heading">
-    <div class="eyebrow">The Atrey Approach</div>
-    <h2>A journey through care, guided by understanding.</h2>
-    <p>Explore our approach to Ayurveda, Panchakarma and individualised healthcare.</p>
-  </div>
-  <div class="story-layout">
-    <div class="story-visual">
-      <img class="story-photo active" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=85" alt="A calm wellness setting">
-      <img class="story-photo" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1400&q=85" alt="Natural botanical details" loading="lazy">
-      <img class="story-photo" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=85" alt="Treatment environment" loading="lazy">
-      <img class="story-photo" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=85" alt="Professional facial skincare treatment" loading="lazy">
-      <div class="story-image-caption" id="storyCaption" aria-live="polite">Care begins with listening.</div>
+      <h1>Care that looks <em>beyond</em> the obvious.</h1>
+
+      <p class="hero-description">
+        Every individual has a different story. We bring Ayurveda, Panchakarma and modern medical perspectives together to understand your needs and guide your care.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20a%20consultation.">
+          Book a consultation <span class="arrow">↗</span>
+        </a>
+        <a class="btn btn-outline" href="#approach">Discover our approach <span class="arrow">↓</span></a>
+      </div>
+
+      <div class="hero-note">
+        ATREY CLINIC &nbsp; / &nbsp; BHANDUP WEST, MUMBAI
+      </div>
     </div>
-    <div class="story-chapters">
-      <article class="story-chapter active" data-story="0">
-        <span class="story-index">01 — OUR PHILOSOPHY</span>
-        <h3>First, understand the person.</h3>
-        <p>Every person has a different health history, concerns and priorities. We begin by understanding your needs and discussing appropriate options for care.</p>
-        <a href="#about">Discover our approach ↗</a>
-      </article>
-      <article class="story-chapter" data-story="1">
-        <span class="story-index">02 — AYURVEDA</span>
-        <h3>Traditional knowledge. Individualised care.</h3>
-        <p>Ayurvedic consultation and treatment planning are considered according to your individual assessment, health status and goals.</p>
-        <a href="#services">Explore our services ↗</a>
-      </article>
-      <article class="story-chapter" data-story="2">
-        <span class="story-index">03 — PANCHAKARMA</span>
-        <h3>A considered approach to every procedure.</h3>
-        <p>Panchakarma and related procedures require appropriate assessment. We discuss suitability, preparation, potential risks and aftercare before proceeding.</p>
-        <a href="#panchakarma">Explore Panchakarma ↗</a>
-      </article>
-      <article class="story-chapter" data-story="3">
-        <span class="story-index">04 — SKIN & HAIR</span>
-        <h3>Personalised aesthetic care.</h3>
-        <p>Explore Hydrafacial, chemical peels and PRP for skin and hair. Options depend on individual assessment and suitability.</p>
-        <a href="#cosmetology">Discover skin & hair services ↗</a>
-      </article>
+
+    <div class="artwork reveal" role="img" aria-label="Abstract architectural composition representing light, perspective and individualised care">
+      <span class="art-index">01 / Perspective</span>
+      <div class="art-sun"></div>
+      <div class="art-wall"></div>
+      <div class="art-pillar"></div>
+      <div class="art-shadow"></div>
+      <div class="art-frame"></div>
+      <div class="art-human">
+        <div class="head"></div>
+        <div class="body"></div>
+      </div>
+      <span class="art-caption">Different perspectives. Individual care.</span>
     </div>
   </div>
 </section>
 
-<div class="intro-strip">
-  <div class="container intro-strip-inner">
-    <div class="intro-item"><strong>Ayurveda & Panchakarma</strong><span>Traditional care, thoughtfully considered</span></div>
-    <div class="intro-item"><strong>Integrated Healthcare</strong><span>Guidance based on individual needs</span></div>
-    <div class="intro-item"><strong>Skin, Hair & Cosmetology</strong><span>Selected aesthetic services</span></div>
-  </div>
-</div>
-
-<section class="section" id="about">
-  <div class="container split">
-    <div class="editorial-image">
-      <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1100&q=85" alt="Natural botanical setting" loading="lazy">
-      <div class="image-caption">Thoughtful care. A personal approach.</div>
+<section class="intro-strip">
+  <div class="wrap intro-grid">
+    <div class="intro-item">
+      <span class="intro-number">01</span>
+      <strong>Understand the individual</strong>
+      <p>Care begins with listening and understanding.</p>
     </div>
-    <div class="split-copy">
-      <div class="eyebrow">Welcome to Atrey Clinic</div>
-      <h2>Healthcare is personal. Your care should be, too.</h2>
-      <p class="body-copy">Every person's health concerns, circumstances and treatment goals are different. We believe good healthcare begins with listening, understanding individual needs and discussing appropriate options.</p>
-      <p class="body-copy">Our practice brings Ayurvedic treatment, Panchakarma and modern medical consultation together where appropriate, with an emphasis on clear communication and responsible care.</p>
-      <a class="text-link" href="#doctors">Meet our doctors ↗</a>
+    <div class="intro-item">
+      <span class="intro-number">02</span>
+      <strong>Consider the whole picture</strong>
+      <p>Symptoms, history and everyday life matter.</p>
+    </div>
+    <div class="intro-item">
+      <span class="intro-number">03</span>
+      <strong>Make informed choices</strong>
+      <p>Care guided by clinical assessment and individual needs.</p>
     </div>
   </div>
 </section>
 
-<section class="section section-ivory" id="services">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Our Services</div>
-      <h2>Care for different needs. A considered approach to each.</h2>
-      <p>Explore our consultation, treatment and wellness services. Suitability and treatment options are discussed following individual assessment.</p>
+<section class="section" id="approach">
+  <div class="wrap approach-grid">
+    <div class="approach-visual reveal" role="img" aria-label="Abstract geometric artwork representing perspective and precision">
+      <div class="approach-circle"></div>
+      <div class="approach-symbol">A.</div>
     </div>
+
+    <div class="approach-copy reveal">
+      <div class="eyebrow">Our approach</div>
+      <h2 class="section-heading">First, we seek to <em>understand.</em></h2>
+
+      <p>
+        Good healthcare is not simply about choosing a treatment. It begins with understanding the person, considering the available information and deciding what is appropriate for their needs.
+      </p>
+
+      <p>
+        At Atrey Clinic, Ayurveda and modern medical perspectives inform our approach, with attention to individual circumstances, clinical assessment and informed decision-making.
+      </p>
+
+      <div class="principles">
+        <div class="principle">
+          <span class="principle-num">01</span>
+          <div>
+            <strong>Listen</strong>
+            <p>Understand your concerns, experiences and expectations.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <span class="principle-num">02</span>
+          <div>
+            <strong>Assess</strong>
+            <p>Consider your history, symptoms and relevant clinical findings.</p>
+          </div>
+        </div>
+        <div class="principle">
+          <span class="principle-num">03</span>
+          <div>
+            <strong>Personalise</strong>
+            <p>Discuss appropriate care options based on individual needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="services-top reveal">
+      <div>
+        <div class="eyebrow">Areas of care</div>
+        <h2 class="section-heading">Healthcare, <em>considered individually.</em></h2>
+      </div>
+      <p>
+        A range of consultation and treatment services, guided by your needs and an appropriate clinical assessment.
+      </p>
+    </div>
+
     <div class="service-grid">
-      <article class="service-card"><span class="service-number">01</span><h3>Ayurvedic Treatment</h3><p>Ayurvedic consultation and treatment planning informed by individual assessment and health needs.</p><a href="#panchakarma">Explore procedures ↗</a></article>
-      <article class="service-card"><span class="service-number">02</span><h3>General Medicine</h3><p>Medical consultation and guidance for common health concerns and appropriate next steps.</p><a href="#contact">Enquire about a visit ↗</a></article>
-      <article class="service-card"><span class="service-number">03</span><h3>Chronic Disease Management</h3><p>Ongoing care guidance and follow-up, with appropriate medical treatment and monitoring.</p><a href="#contact">Enquire about a visit ↗</a></article>
-      <article class="service-card"><span class="service-number">04</span><h3>Lifestyle Management</h3><p>Practical guidance on daily routines and lifestyle habits to support individual health goals.</p><a href="#contact">Discuss your needs ↗</a></article>
-      <article class="service-card"><span class="service-number">05</span><h3>Suprajanan & Garbhasanskar</h3><p>Guidance relating to preconception care and pregnancy wellbeing, tailored to individual circumstances.</p><a href="#contact">Enquire about a visit ↗</a></article>
-      <article class="service-card"><span class="service-number">06</span><h3>Skin, Hair & Cosmetology</h3><p>Hydrafacial, chemical peels and PRP for skin and hair, subject to assessment and suitability.</p><a href="#cosmetology">Explore skin & hair services ↗</a></article>
+      <article class="service-card reveal">
+        <span class="service-index">01</span>
+        <h3>Ayurvedic Care</h3>
+        <p>Individualised Ayurvedic consultation and treatment, including Panchakarma where appropriate.</p>
+        <a class="service-arrow" href="#panchakarma" aria-label="Explore Panchakarma">↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-index">02</span>
+        <h3>General Medicine</h3>
+        <p>Medical consultation, assessment of common health concerns and guidance on further care.</p>
+        <a class="service-arrow" href="#contact" aria-label="Enquire about general medicine">↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-index">03</span>
+        <h3>Chronic Disease Management</h3>
+        <p>Ongoing care planning and lifestyle guidance alongside appropriate medical management.</p>
+        <a class="service-arrow" href="#contact" aria-label="Enquire about chronic disease management">↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-index">04</span>
+        <h3>Lifestyle Management</h3>
+        <p>Practical guidance on daily routines, wellbeing and sustainable lifestyle choices.</p>
+        <a class="service-arrow" href="#contact" aria-label="Enquire about lifestyle management">↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-index">05</span>
+        <h3>Suprajanan & Garbhasanskar</h3>
+        <p>Guidance relating to preconception, pregnancy preparation and traditional Garbhasanskar practices.</p>
+        <a class="service-arrow" href="#contact" aria-label="Enquire about Suprajanan and Garbhasanskar">↗</a>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-index">06</span>
+        <h3>Skin, Hair & Cosmetology</h3>
+        <p>Selected skin and hair procedures, including Hydrafacial, chemical peels and PRP treatments.</p>
+        <a class="service-arrow" href="#skin-hair" aria-label="Explore skin and hair treatments">↗</a>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section section-sage" id="panchakarma">
-  <div class="container panchakarma-layout">
-    <div>
-      <div class="eyebrow">Ayurvedic Procedures</div>
-      <h2>Panchakarma & related procedures.</h2>
-      <p class="body-copy">Traditional Ayurvedic procedures are considered according to an individual's assessment, health status and suitability. Our clinic can discuss the procedure, preparation and aftercare with you.</p>
-      <a class="button" href="#contact">Ask About Panchakarma ↗</a>
+<section class="section panchakarma" id="panchakarma">
+  <div class="wrap panchakarma-grid">
+    <div class="reveal">
+      <div class="eyebrow">Ayurvedic procedures</div>
+      <h2 class="section-heading">Panchakarma, with <em>purpose.</em></h2>
+      <p class="section-intro">
+        Traditional Ayurvedic procedures selected according to individual assessment, suitability and clinical judgement.
+      </p>
+      <p class="panchakarma-note">Traditional practice · Individual assessment · Appropriate care</p>
     </div>
-    <div>
-      <ul class="procedure-list">
-        <li>Snehan & Swedan</li><li>Basti</li><li>Shirodhara</li><li>Takradhara</li><li>Nasya</li><li>Netratarpan</li><li>Vaman</li><li>Virechan</li><li>Suvarnaprashan</li>
-      </ul>
-      <p class="note">Not every procedure is suitable for every person. Specialised procedures require qualified assessment. Ask the clinic about suitability, risks, preparation and aftercare before proceeding.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section section-ivory" id="cosmetology">
-  <div class="container">
-    <div class="cosmetic-intro">
-      <div class="section-heading"><div class="eyebrow">Skin, Hair & Cosmetology</div><h2>Personalised care for your skin and hair.</h2></div>
-      <p class="body-copy">Treatment options depend on your concerns, skin or hair condition, medical history and suitability for the procedure.</p>
-    </div>
-    <div class="beauty-grid">
-      <article class="beauty-card"><div class="beauty-image"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="Professional facial skincare treatment" loading="lazy"></div><div class="beauty-copy"><div class="eyebrow">01 · Skin</div><h3>Hydrafacial</h3><p>A facial skincare treatment selected according to your skin's needs and professional assessment.</p></div></article>
-      <article class="beauty-card"><div class="beauty-image"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85" alt="Skincare products" loading="lazy"></div><div class="beauty-copy"><div class="eyebrow">02 · Skin</div><h3>Chemical Peels</h3><p>Peel options discussed according to skin type, goals, potential risks and suitability.</p></div></article>
-      <article class="beauty-card"><div class="beauty-image"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85" alt="Hair care" loading="lazy"></div><div class="beauty-copy"><div class="eyebrow">03 · Skin & Hair</div><h3>PRP for Skin & Hair</h3><p>Enquire about the assessment process, expected outcomes and potential risks.</p></div></article>
-    </div>
-    <p class="note" style="margin-top:24px">A consultation is required to assess suitability. Outcomes vary, and no aesthetic treatment can guarantee a particular result.</p>
-  </div>
-</section>
-
-<section class="section" id="doctors">
-  <div class="container">
-    <div class="section-heading center"><div class="eyebrow">Your Care Team</div><h2>Meet our doctors.</h2><p>Our doctors are here to understand your concerns and discuss appropriate care options.</p></div>
-    <div class="doctors-grid">
-      <article class="doctor-card"><div class="doctor-initial">V</div><h3>Dr Vidyashree Hulawale</h3><p>Ayurvedic consultation and care at Atrey Clinic.</p></article>
-      <article class="doctor-card"><div class="doctor-initial">S</div><h3>Dr Santosh Hulawale</h3><p>Consultation and integrated healthcare guidance at Atrey Clinic.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="visit">
-  <div class="container visit-inner">
-    <div><div class="eyebrow">Your Next Step</div><h2>Have a health concern you'd like to discuss?</h2><p>Contact our clinic to enquire about services, consultation availability and directions.</p></div>
-    <a class="button button-gold" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer">Contact Us on WhatsApp ↗</a>
-  </div>
-</section>
-
-<section class="section section-ivory" id="contact">
-  <div class="container">
-    <div class="section-heading"><div class="eyebrow">Visit Atrey Clinic</div><h2>We look forward to hearing from you.</h2><p>Contact the clinic for appointment enquiries and information about our services.</p></div>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Find Our Clinic</h3>
-        <p>106, Kshitij Eminence,<br>Opp. Dina Bama Patil Library,<br>Jangal Mangal Road, Bhandup West,<br>Mumbai, Maharashtra, India.</p>
-        <p><a href="https://www.google.com/maps/search/?api=1&query=106+Kshitij+Eminence+Jangal+Mangal+Road+Bhandup+West+Mumbai" target="_blank" rel="noopener noreferrer">Get directions on Google Maps ↗</a></p>
+    <div class="procedure-list reveal">
+      <div class="procedure">
+        <strong>Snehan & Swedan</strong>
+        <span>Oleation and fomentation</span>
       </div>
-      <div class="contact-card">
-        <h3>Contact & Timings</h3>
-        <p><strong>Phone:</strong> <a href="tel:+918779932849">87799 32849</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer">Send an enquiry ↗</a></p>
-        <div class="hours"><strong>Consultation Hours</strong><p>Monday–Saturday<br>10:00 AM – 9:00 PM</p><p>Sunday: Please contact the clinic to enquire.</p></div>
+      <div class="procedure">
+        <strong>Basti</strong>
+        <span>Medicated enema procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Shirodhara</strong>
+        <span>Traditional forehead oil-flow procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Takradhara</strong>
+        <span>Traditional medicated-liquid procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Nasya</strong>
+        <span>Nasal administration procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Netratarpan</strong>
+        <span>Traditional ocular procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Vaman</strong>
+        <span>Therapeutic emesis procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Virechan</strong>
+        <span>Therapeutic purgation procedure</span>
+      </div>
+      <div class="procedure">
+        <strong>Suvarnaprashan</strong>
+        <span>Traditional Ayurvedic practice</span>
       </div>
     </div>
   </div>
 </section>
+
+<section class="section" id="skin-hair">
+  <div class="wrap skin-grid">
+    <div class="skin-copy reveal">
+      <div class="eyebrow">Skin, hair & cosmetology</div>
+      <h2 class="section-heading">A considered approach to <em>personal care.</em></h2>
+
+      <p class="section-intro">
+        Skin and hair concerns deserve individual attention. Treatment options should be discussed after assessing suitability, expected outcomes, limitations and potential risks.
+      </p>
+
+      <div class="treatment-list">
+        <div class="treatment">
+          <span>Hydrafacial</span>
+          <span>↗</span>
+        </div>
+        <div class="treatment">
+          <span>Chemical Peel</span>
+          <span>↗</span>
+        </div>
+        <div class="treatment">
+          <span>PRP for Skin & Hair</span>
+          <span>↗</span>
+        </div>
+      </div>
+
+      <p style="color:var(--muted);font-size:11px;margin-top:18px;">
+        Suitability and expected results vary. A consultation is recommended before any procedure.
+      </p>
+
+      <a class="btn" style="margin-top:16px;" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20skin%20and%20hair%20treatments.">
+        Enquire about treatments <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="skin-art reveal" role="img" aria-label="Abstract sculptural artwork in natural stone tones">
+      <span class="skin-art-label">Care, with consideration.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section doctors" id="doctors">
+  <div class="wrap">
+    <div class="eyebrow">Your healthcare team</div>
+    <h2 class="section-heading">Care begins with a <em>conversation.</em></h2>
+    <p class="section-intro">
+      Meet the doctors at Atrey Clinic. Contact us to enquire about consultations and available services.
+    </p>
+
+    <div class="doctor-grid">
+      <article class="doctor-card reveal">
+        <div class="doctor-monogram" aria-hidden="true">VH</div>
+        <div>
+          <span class="doctor-label">Doctor</span>
+          <h3>Dr Vidyashree Hulawale</h3>
+          <p>Consultation and care at Atrey Clinic.</p>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal">
+        <div class="doctor-monogram" aria-hidden="true">SH</div>
+        <div>
+          <span class="doctor-label">Doctor</span>
+          <h3>Dr Santosh Hulawale</h3>
+          <p>Consultation and care at Atrey Clinic.</p>
+        </div>
+      </article>
+    </div>
+
+    <p style="margin-top:20px;color:var(--muted);font-size:11px;">
+      For qualifications, specialities and appointment availability, please contact the clinic directly.
+    </p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div class="contact-copy reveal">
+        <div class="eyebrow">Visit Atrey Clinic</div>
+        <h2 class="section-heading">Let's begin with a <em>conversation.</em></h2>
+        <p>
+          Have a question or wish to schedule a consultation? Contact us to discuss your concerns and find out about available appointments.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment.">
+            WhatsApp us ↗
+          </a>
+          <a class="btn btn-outline" href="tel:+918779932849">
+            Call the clinic
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-details reveal">
+        <div class="contact-detail">
+          <span>Find us</span>
+          <p>106, Kshitij Eminence,<br>
+          Opp. Dina Bama Patil Library,<br>
+          Jangal Mangal Road, Bhandup West,<br>
+          Mumbai, Maharashtra.</p>
+        </div>
+
+        <div class="contact-detail">
+          <span>Opening hours</span>
+          <p>Monday – Saturday<br>10:00 AM – 9:00 PM</p>
+        </div>
+
+        <div class="contact-detail">
+          <span>Call or WhatsApp</span>
+          <p><a href="tel:+918779932849">+91 87799 32849</a></p>
+        </div>
+
+        <div class="contact-detail">
+          <span>Appointments</span>
+          <p>Contact us to confirm availability and the appropriate consultation.</p>
+        </div>
+
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Atrey+Clinic+106+Kshitij+Eminence+Bhandup+West+Mumbai" target="_blank" rel="noopener noreferrer">
+          Get directions ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer-main">
-      <div><a class="brand" href="#home"><span class="brand-name">Atrey Clinic</span><span class="brand-sub">AYURVEDA · PANCHAKARMA · INTEGRATED HEALTHCARE</span></a><p>Thoughtful healthcare guidance, with attention to individual needs and informed decisions.</p></div>
-      <div class="footer-links"><a href="#about">Our Approach</a><a href="#services">Services</a><a href="#panchakarma">Panchakarma</a><a href="#cosmetology">Skin & Hair</a><a href="#contact">Contact</a></div>
+  <div class="wrap footer-inner">
+    <a class="brand" href="#home">
+      <span class="brand-mark">A</span>
+      <span>
+        <span class="brand-name">ATREY CLINIC</span>
+        <span class="brand-sub">Ayurveda · Panchakarma · Integrated Healthcare</span>
+      </span>
+    </a>
+
+    <div class="footer-copy">
+      © <span id="year"></span> Atrey Clinic. All rights reserved.
     </div>
-    <div class="footer-bottom"><span>© <span id="year"></span> Atrey Clinic. All rights reserved.</span><span>Website information is general guidance, not a substitute for individual medical consultation.</span></div>
+
+    <div class="footer-links">
+      <a href="#approach">Our approach</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer" aria-label="Contact Atrey Clinic on WhatsApp">WhatsApp ↗</a>
+<a class="whatsapp-float"
+   href="https://wa.me/918779932849?text=Hello%20Atrey%20Clinic"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact Atrey Clinic on WhatsApp">WA</a>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 menuToggle.addEventListener("click", function () {
   const isOpen = navLinks.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.textContent = isOpen ? "Close ×" : "Menu ☰";
+  menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  menuToggle.textContent = isOpen ? "×" : "☰";
 });
 
 navLinks.querySelectorAll("a").forEach(function (link) {
   link.addEventListener("click", function () {
     navLinks.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.textContent = "Menu ☰";
+    menuToggle.setAttribute("aria-label", "Open navigation");
+    menuToggle.textContent = "☰";
   });
 });
 
-const storyChapters = document.querySelectorAll(".story-chapter");
-const storyPhotos = document.querySelectorAll(".story-photo");
-const storyCaption = document.getElementById("storyCaption");
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const storyCaptions = [
-  "Care begins with listening.",
-  "Traditional knowledge. Individualised care.",
-  "A considered approach to every procedure.",
-  "Thoughtful care for skin and hair."
-];
+const revealItems = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
-  const storyObserver = new IntersectionObserver(function (entries) {
+  const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-
-      const index = Number(entry.target.dataset.story);
-
-      storyChapters.forEach(function (chapter, i) {
-        chapter.classList.toggle("active", i === index);
-      });
-
-      storyPhotos.forEach(function (photo, i) {
-        photo.classList.toggle("active", i === index);
-      });
-
-      storyCaption.textContent = storyCaptions[index];
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
     });
-  }, {
-    root: null,
-    rootMargin: "-35% 0px -35% 0px",
-    threshold: 0
-  });
+  }, { threshold: 0.12 });
 
-  storyChapters.forEach(function (chapter) {
-    storyObserver.observe(chapter);
+  revealItems.forEach(function (item) {
+    observer.observe(item);
+  });
+} else {
+  revealItems.forEach(function (item) {
+    item.classList.add("visible");
   });
 }
 </script>
+
 </body>
 </html>
